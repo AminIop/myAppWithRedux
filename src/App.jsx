@@ -1,7 +1,11 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 
-export const App = () => {
+const App = () => {
+  const selector = useSelector(state => state)
+  console.log(selector)
   return (
     <div>App</div>
   )
 }
+export default App
